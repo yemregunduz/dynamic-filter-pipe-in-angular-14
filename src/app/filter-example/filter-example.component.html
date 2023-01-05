@@ -1,0 +1,30 @@
+<h1 class="title">Dynamic Filter Pipe Examples</h1>
+
+<div class="blackboard">
+    <div class="example-header">
+      <h6 class="example-title">Dynamic Filter Pipe Example-1</h6>
+      <input class="input-filter" placeholder="Search for projects..." [(ngModel)]="filterText">
+    </div>
+    <div class="responsive-table">
+      <table class="custom-table" cellspacing="0" cellpadding="0">
+        <thead>
+          <tr>
+            <th><span>Title</span></th>
+            <th><span>Description</span></th>
+            <th><span>Owner</span></th>
+            <th><span>Status</span></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr
+            *ngFor="let project of projects | dynamicFilter : {filterText:filterText,field: 'title,description,status,owner.firstName,owner.lastName'}">
+            <td>{{project.title}}</td>
+            <td>{{project.description}}</td>
+            <td>{{project.owner.firstName}} {{project.owner.lastName}}</td>
+            <td>{{project.status}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+</div>

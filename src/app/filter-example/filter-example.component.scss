@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css?family=Amarante');
+
+
+.blackboard {
+    position: relative;
+    margin: 1% auto;
+    max-width: 800px;
+    border: tan solid 12px;
+    border-top: #bda27e solid 12px;
+    border-left: #b19876 solid 12px;
+    border-bottom: #c9ad86 solid 12px;
+    box-shadow: 0px 0px 6px 5px rgba(58, 18, 13, 0), 0px 0px 0px 2px #c2a782, 0px 0px 0px 4px #a58e6f, 3px 4px 8px 5px rgba(0, 0, 0, 0.5);
+    background-image: radial-gradient(circle at left 30%, rgba(34, 34, 34, 0.3), rgba(34, 34, 34, 0.3) 80px, rgba(34, 34, 34, 0.5) 100px, rgba(51, 51, 51, 0.5) 160px, rgba(51, 51, 51, 0.5)), linear-gradient(215deg, transparent, transparent 100px, #222 260px, #222 320px, transparent), radial-gradient(circle at right, #111, rgba(51, 51, 51, 1));
+    background-color: #333;
+}
+
+.custom-table { border-collapse: collapse; border-spacing: 0; }
+
+.title{
+    font-family: 'Amarante', Tahoma, sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    margin: 0;
+}
+
+.example-header{
+    display:flex;
+    flex-direction: column;
+    align-items:center
+}
+
+.example-title { 
+  font-family: 'Amarante', Tahoma, sans-serif;
+  font-weight: bold;
+  font-size: 1.7rem;
+  line-height: 2em;
+  margin-bottom: 10px;
+  text-align: center;
+  color:white;
+  margin-top:0
+}
+
+.input-filter{
+    max-width: 275px;
+    min-width: 275px;
+    padding: 5px;
+    border-radius: 0.5rem;
+    border:0;
+    outline: none;
+    &::placeholder{
+        text-align: center;
+        color:black;
+    }
+    font-weight: bold;
+
+}
+
+.responsive-table {
+  max-height: 65vh;
+
+  max-width: 100%;
+  height: auto;
+  overflow-x: auto;
+  margin: 1rem auto;
+  padding: 10px 17px;
+  &::-webkit-scrollbar {
+    width: 5px;
+    height: 7px;
+  }
+  
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 0.5rem;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: #ddd;
+  }
+}
+
+.custom-table {
+  margin: 0 auto;
+  font-size: 1.2em;
+  margin-bottom: 15px;
+}
+
+
+.custom-table thead {
+  cursor: pointer;
+  color:white;
+  position: sticky;
+  top: -11px;
+  background: #333;
+  box-shadow: 0px 1px 0px 0px #ddd;
+}
+.custom-table thead tr th { 
+  font-weight: bold;
+  padding: 12px 30px;
+  padding-left: 42px;
+}
+.custom-table thead tr th span { 
+  font-family: 'Amarante', Tahoma, sans-serif;
+
+  padding-right: 20px;
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+}
+
+.custom-table tbody tr { 
+  color: #ddd;
+}
+.custom-table tbody tr td {
+  text-align: center;
+  padding: 15px 10px;
+}
+.custom-table tbody tr td.lalign {
+  text-align: left;
+}

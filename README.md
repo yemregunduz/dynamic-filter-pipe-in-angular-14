@@ -30,6 +30,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
  // define array of ExampleModel
  models : ExampleModel[] = [] //Pass element into Array.
 ```
+**Filter Pipe Parameters**
 
 | Parameters  | Type | Decsription |
 | :------------ |:---------------| -----|

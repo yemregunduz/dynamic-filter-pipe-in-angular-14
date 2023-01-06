@@ -31,22 +31,27 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
  models : ExampleModel[] = [] //Pass element into Array.
 ```
 
-**Filter for a basic field**
-"To filter based on a single field, we should pass the name of the field we want to filter on as the field parameter of the pipe."
-`*ngFor="let model of models | dynamicFilter: {filterText: filterText,field:'title'} "`
-
-**Filter for multiple fields**
-"We need to pass the field names separated by commas as the field parameter in order to filter based on multiple fields."
-`*ngFor="let model of models | dynamicFilter: {filterText: filterText,field:'title,description'} "`
-
-**Filter for nested and multiple fields**
-When filtering nested objects based on multiple fields, we should use dots to access deeply nested fields and separate the fields with commas in order to filter based on multiple fields.
-`*ngFor="let model of models | dynamicFilter: {filterText: filterText,field:'title,owner.firstName,owner.lastName,owner.address.country,owner.address.city'} "`
 | Parameters  | Type | Decsription |
 | :------------ |:---------------| -----|
 | args      | **object** | Contains the fields of the object to be filtered and the filter text. |
 | filterText | **string**|  Filter Text  |
 | field | **string**| Any Object fields name |
+
+**Filter for a basic field**
+"To filter based on a single field, we should pass the name of the field we want to filter on as the field parameter of the pipe."
+
+`*ngFor="let model of models | dynamicFilter: {filterText: filterText,field:'title'} "`
+
+**Filter for multiple fields**
+"We need to pass the field names separated by commas as the field parameter in order to filter based on multiple fields."
+
+`*ngFor="let model of models | dynamicFilter: {filterText: filterText,field:'title,description'} "`
+
+**Filter for nested and multiple fields**
+When filtering nested objects based on multiple fields, we should use dots to access deeply nested fields and separate the fields with commas in order to filter based on multiple fields.
+
+`*ngFor="let model of models | dynamicFilter: {filterText: filterText,field:'title,owner.firstName,owner.lastName,owner.address.country,owner.address.city'} "`
+
 
 
 ## Development server

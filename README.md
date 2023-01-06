@@ -2,6 +2,8 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.1.This is an example of a pipe developed to allow filtering using Angular, regardless of the model.
 
+You can access the code for the pipe by following the path `./src/app/dynamic-filter/dynamic-filter.pipe.ts` and you can access the usage example by following the path `./src/app/filter-example`.
+
 ## Use Case
 
 - Exported From: **DynamicFilterModule** 
